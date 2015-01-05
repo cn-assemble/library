@@ -26,7 +26,21 @@ class Admin extends CI_Controller {
 
     public function index()
     {
-        $this->edit_floor_3();
+        $this->load->view('/back/floor_select_admin');
+        
+    }
+
+    public function select_floor(){
+        extract($_POST);
+        if($floor == '2')
+        {
+            $this->edit_floor_2();
+        }
+        else
+        {
+            $this->edit_floor_3();
+        }
+
     }
 
     public function edit_floor_2(){
