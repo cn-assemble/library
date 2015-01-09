@@ -1,4 +1,4 @@
-<div class= "zone pic ">
+<div class= "zone pic">
     <div class = "down">
 
         <?php foreach ($shelf as $item):?>

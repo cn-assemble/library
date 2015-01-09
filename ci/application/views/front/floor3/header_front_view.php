@@ -3,11 +3,11 @@
     <style>
 
         *{padding: 0px;margin: 0px;}
-        .left{background-color: red; width: 20%; height: 97%; float: left;}
-        .right{background-color: yellow; width: 20%; height:97%; float: left;}
-        .top{background-color: purple; width:40%; height:20%; float: left;}
-        .pic {background-color: green; width:40%; height: 53%; position: absolute; left:21%; top:22%;}
-        .down {background-color: blue; width:40%; height: 20%; position: absolute; left:21%; top:77%;}
+        .left{background-color: #D0D0D0; width: 20%; height: 97%; float: left; opacity: 0.977;}
+        .right{background-color: #D0D0D0; width: 20%; height:97%; float: left; opacity: 0.977;}
+        .top{background-color: #D0D0D0; width:40%; height:20%; float: left; opacity: 0.977;}
+        .pic {background-color: #D0D0D0; width:40%; height: 53%; position: absolute; left:21%; top:22%; opacity: 0.977;}
+        .down {background-color: #D0D0D0; width:40%; height: 20%; position: absolute; left:21%; top:77%; opacity: 0.977;}
         .zone{margin:0.5%;}
         .data-left {background: grey; margin:2.5% 10% 2.5% 10% ; width:80%; height:4%;}
         .data-top {background: grey;  margin:2.5% -0.5% 2.5% 2%; width: 4%; height: 80%; float: left;}
