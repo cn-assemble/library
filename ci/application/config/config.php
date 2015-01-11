@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://sonitaloli.ddns.net/ci/';
 //$config['base_url']	= 'http://115.87.55.53/ci';
 /*
 |--------------------------------------------------------------------------

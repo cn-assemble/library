@@ -1,3 +1,3 @@
-<div class= "zone pic">
+<div class = "zone pic">
 
 </div>

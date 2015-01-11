@@ -1,18 +1,20 @@
 <head>
 
     <style>
-
+        div{opacity: 0.977;}
         *{padding: 0px;margin: 0px;}
-        .left{background-color: #D0D0D0; width: 20%; height: 97%; float: left; opacity: 0.977;}
-        .right{background-color: #D0D0D0; width: 20%; height:97%; float: left; opacity: 0.977;}
-        .top{background-color: #D0D0D0; width:40%; height:20%; float: left; opacity: 0.977;}
-        .pic {background-color: #D0D0D0; width:40%; height: 53%; position: absolute; left:21%; top:22%; opacity: 0.977;}
-        .down {background-color: #D0D0D0; width:40%; height: 20%; position: absolute; left:21%; top:77%; opacity: 0.977;}
+        .zoneex{background-color: #505050; width: 40%; height: 97%; float:left; margin: 0.5%;}
+        .left{background-color: #808080; width: 20%; height: 97%; float: left;}
+        .right{background-color: #808080; width: 20%; height:97%; float: left;}
+        .top{background-color: #808080; width:99%; height:8%; float: left; margin: 0.5%;}
+        .pic {background-color: #808080; width:99%; height: 69.5%; float: left; margin: 0.5%;}
+        .down {background-color: #808080; width:99%; height: 20%; float: left; margin: 0.5%;}        
+        h1 { font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 100; font-size: 280%;text-align: center;color: rgb(75, 75, 75);}
         .zone{margin:0.5%;}
-        .data-left {background: grey; margin:2.5% 10% 2.5% 10% ; width:80%; height:4%;}
-        .data-top {background: grey;  margin:2.5% -0.5% 2.5% 2%; width: 4%; height: 80%; float: left;}
-        .data-down {background: grey; margin:2.5% 2% 2.5% -0.5% ; width:4%; height:80%; float:right;}
-        .data-right {background: grey; margin:2.5% 10% 2.5% 10% ; width:80%; height:3.2%;}
+        .data-left {background: #C0C0C0; margin:2.5% 10% 2.5% 10% ; width:80%; height:4%;}
+        .data-top {background: #C0C0C0;  margin:2.5% -0.5% 2.5% 2%; width: 4%; height: 80%; float: left;}
+        .data-down {background: #C0C0C0; margin:2.5% 2% 2.5% -0.5% ; width:4%; height:80%; float:right;}
+        .data-right {background: #C0C0C0; margin:2.5% 10% 2.5% 10% ; width:80%; height:3.2%;}
 
         .blink{
             /* Chrome, Safari, Opera */

@@ -1,8 +1,8 @@
 
 <div class="shelf-form" style="clear: left;">
     <br>Swap Shelf (Change book from Shelf A to B and B to A)<br>
-<?php echo form_open('welcome/swap_submit');
-    $floor_of_form = 2; //edit when use in floor 3
+<?php echo form_open('admin/swap_submit');
+    $floor_of_form = 3; //edit when use in floor 3
 ?>
     <div>
         <label><strong>Shelf A Number</strong></label>

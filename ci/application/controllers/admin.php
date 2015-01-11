@@ -51,9 +51,8 @@ class Admin extends CI_Controller {
         $this->load->view('/back/floor2/left_left_back_view',$data);
         $this->load->view('/back/floor2/left_right_back_view',$data);
         $this->load->view('/back/floor2/pic_back_view',$data);
-        $this->load->view('/back/floor2/right_back_view',$data);
-        $this->load->view('/back/floor2/down_back_view',$data);
-        $this->load->view('/back/floor2/down_back_view_swap',$data);
+        $this->load->view('/back/floor2/right_back_view',$data);        
+        //$this->load->view('/back/floor2/down_back_view_swap',$data);
     }
 
     public function edit_floor_3(){
@@ -63,16 +62,16 @@ class Admin extends CI_Controller {
         $this->load->view('/back/floor3/header_back_view',$data);
         $this->load->view('/back/floor3/left_back_view',$data);
         $this->load->view('/back/floor3/top_back_view',$data);
-        $this->load->view('/back/floor3/right_back_view',$data);
         $this->load->view('/back/floor3/pic_back_view',$data);
         $this->load->view('/back/floor3/down_back_view',$data);
-        $this->load->view('/back/floor3/down_back_view_swap',$data);
+        $this->load->view('/back/floor3/right_back_view',$data);
+        //$this->load->view('/back/floor3/down_back_view_swap',$data);
     }
 
     public function update(){
         extract($_POST);
         $this->load->model('update_model');
-        $this->update_model->update($number,$min,$max,$zone,$system,$oldnumber);
+        $this->update_model->update($number,$min,$max,$zone,$system,$oldnumber);        
     }
 
     public function add(){
@@ -97,21 +96,32 @@ class Admin extends CI_Controller {
         $this->form_validation->set_rules('floorB', 'Floor of B', 'required');
         if($this->form_validation->run() == FALSE)
         {
-            $this->edit();
+            $this->index();
         }
         else
         {
             $this->load->model('swap_model');
             $submit_data = $this->input->post(NULL, TRUE);
+
+            extract($submit_data);
+
             if ($this->swap_model->swap_data($submit_data))
             {
                 echo 'Swap data successfully.';
-                $this->edit();
+                if($floorA == 3)
+                {
+                    $this->edit_floor_3();
+                }
+                else
+                {
+                    $this->edit_floor_2();
+                }
+
             }
             else
             {
                 echo 'Swap data UNSUCCESSFULLY ! PLEASE TRY IT AGAIN!!.';
-                $this->edit();
+                $this->index()   ;
             }
         }
     }

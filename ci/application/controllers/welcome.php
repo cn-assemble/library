@@ -73,10 +73,11 @@ class Welcome extends CI_Controller {
         else{
         	$this->load->view('/front/floor3/header_front_view',$data);
 			$this->load->view('/front/floor3/left_front_view',$data);
-			$this->load->view('/front/floor3/top_front_view',$data);
-			$this->load->view('/front/floor3/right_front_view',$data);
+            $this->load->view('/front/floor3/top_front_view',$data);
 			$this->load->view('/front/floor3/pic_front_view',$data);
-			$this->load->view('/front/floor3/down_front_view',$data);
+            $this->load->view('/front/floor3/down_front_view',$data);
+            $this->load->view('/front/floor3/right_front_view',$data);
+
         }
 	}
 

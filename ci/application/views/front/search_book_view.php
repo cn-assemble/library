@@ -7,7 +7,7 @@ body{top:0;overflow:hidden;width:100%;height:100%;background: url("/ci/public/im
 </style>
 </head>
 <body>
-<h1 style="color: red;" ><?php echo validation_errors(); $attributes = array('class' => 'pure-form pure-form-aligned'); ?></h1>
+<?php echo validation_errors(); $attributes = array('class' => 'pure-form pure-form-aligned'); ?>
         <?=form_open('welcome/form_submit',$attributes);?>
         <fieldset style="margin-left: 31%; margin-top: 22%;position: fixed;">
         <legend>Searching Shelf of Book</legend>

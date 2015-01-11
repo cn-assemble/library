@@ -1,4 +1,6 @@
-<div class= "zone pic">
+<div class= "zone pic ">
+    <div class="top"> <h1>Second Floor (2nd)</h1></div>
+    <div class="cep"></div>
     <div class = "down">
 
         <?php foreach ($shelf as $item):?>

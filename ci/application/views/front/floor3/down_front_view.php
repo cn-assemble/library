@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <div class = "zone down">
 
     <?php foreach ($shelf as $item):?>
@@ -15,5 +21,3 @@
 </div>
 
 </div>
-
-</body>

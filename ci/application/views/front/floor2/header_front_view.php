@@ -1,41 +1,37 @@
 <head>
 
 	<style>
-       
-		*{
-			padding: 0px;
-			margin: 0px;
-		}
-		.left{background-color: #D0D0D0; width: 25%; height: 97%;opacity: 0.977; float: left}
-		.left_in {background-color: #D0D0D0; width: 48%; height: 98%; float: left}
-
-		.pic {background-color: #D0D0D0; width: 40%; height: 97%;opacity: 0.977; float: left}
-		.down {background-color: #D0D0D0; width: 97%; height: 20%; float: left; margin: 98% 0.5% 0.5% 1.5%;opacity: 0.977;}
-		.right {background-color: #D0D0D0; width: 20%; height: 97%; opacity: 0.977; float: left}
+        div{opacity: 0.977;}
+		*{padding: 0px;	margin: 0px;}
+		.left{background-color: #696969; width: 25%; height: 97%; float: left}
+		.left_in {background-color: #808080; width: 48%; height: 98%; float: left}
+		.top{background-color: #808080; width:97%; height:8%; margin: 0.5% 0.5% 0.5% 1.5%;}
+	h1 { font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 100; font-size: 280%;text-align: center;color: rgb(75, 75, 75);}
+	.cep{background-color: #808080; width:97%; height:69.5%; margin: 0.5% 0.5% 0.5% 1.5%;}
+		.pic {background-color: #696969; width: 40%; height: 97%; float: left}
+		.down {background-color: #808080; width: 97%; height: 20%;  margin: 0.5% 0.5% 0.5% 1.5%;}
+		.right {background-color: #696969; width: 20%; height: 97%; float: left}
 		.zone{
 			margin:0.5%;
 		}
 		.data{
-			background: grey;
+			background: #C0C0C0;
 		}
 		.data-left{
 			margin:1.487834% 0% 1% 15% ;
 			width:70%;
 			height:3.5%;
-			background: grey;
 		}
 		.data-down{
 			margin:1% 1.5% 0% 0%;
 			float:right;
 			width:4.25%;
 			height:92%;
-			background: grey;
 		}
 		.data-right{
 			margin:1.6% 0% 1% 15% ;
 			width:70%;
 			height:4%;
-			background: grey;
 		}
 
 		.blink{
@@ -58,25 +54,25 @@
 
 		}
 
-					/* Chrome, Safari, Opera */
-			@-webkit-keyframes myfirst {
-			    0%   {background:red;}
-            	25%  {background:orange;}
-            	50%  {background:red;}
-            	75%  {background:orange;}
-            	100% {background:red;}
-			}
+        @-webkit-keyframes myfirst {
+            0%   {background:red;}
+            25%  {background:orange;}
+            50%  {background:red;}
+            75%  {background:orange;}
+            100% {background:red;}
+        }
 
-			/* Standard syntax */
-			@keyframes myfirst {
-			    0%   {background:red;}
-            	25%  {background:orange;}
-            	50%  {background:red;}
-            	75%  {background:orange;}
-            	100% {background:red;}
-			}
+        /* Standard syntax */
+        @keyframes myfirst {
+            0%   {background:red;}
+            25%  {background:orange;}
+            50%  {background:red;}
+            75%  {background:orange;}
+            100% {background:red;}
+        }
 
         body{top:0;overflow:hidden;width:100%;height:100%;background: url("/ci/public/img/background.jpg") no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+
 	</style>
 </head>
 
